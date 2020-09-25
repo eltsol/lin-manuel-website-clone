@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/52315d95df.js" crossorigin="anonymous"></script>
+    <script src="./scripts/main.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+       
+        <!-- Logo/Brand -->
+        <a class="navbar-brand" href="https://www.linmanuel.com/">
+            <img src="./images/logo.png" width="300" height="40" class="d-inline-block align-top" alt="logo">
+        </a>
+
+        <!-- Navigation Hamburger Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-label="Toggle navigation">
+            <i class="fas fa-bars" style="color: white;"></i>
+        </button>
+      
+         <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://www.linmanuel.com/about/">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linmanuel.com/projects/">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linmanuel.com/advocacy/">ADVOCACY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linmanuel.com/news/">NEWS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.teerico.com/">STORE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linmanuel.com/contact/">CONTACT</a>
+            </li>
+          </ul>
+
+           <!-- Search -->
+          <button class="btn search-btn" type="submit" onclick="showSearch()"><i class="fas fa-search" style="color: white;"></i></button>
+          <form id="form" style="display: none;">
+            <input class="form-control" type="search" placeholder="Search" >
+          </form>
+        </div>
+    </nav>
+
+    <!-- Hero Image -->
+    <div class="row hero-wrapper">
+        <div class="col-sm-12 no-padding-col">
+            <img class="img-fluid" src="./images/hero.jpg">
+        </div>
+    </div>  
+
+     <!-- Video Carousel -->
+     <div class="row">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+            <!-- Video Carousel Indicators -->
+           <ol class="carousel-indicators">
+             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+             <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+           </ol>
+   
+            <!-- Video Carousel Content -->
+           <div class="carousel-inner">
+             <div class="carousel-item active">
+               <img class="d-block w-100" src="./images/slide1.jpg" alt="First slide">
+               <div class="carousel-caption d-md-block">
+                   <h2 class="heading">It's time to tell his story.</h2>
+                   <h3 class="caption">#SiempreLuis premieres October 6 on @hbo and @hbomax.</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide2.jpg" alt="Second slide">
+               <div class="carousel-caption d-md-block">
+                   <h2 class="heading">Worlds are Changing...</h2>
+                   <h3 class="caption">#HisDarkMaterials Season 2 premieres this November on @HBO.</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide3.jpg" alt="Third slide">
+               <div class="carousel-caption d-md-block" style="top: 5%;">
+                   <h2 class="heading" >'Hamilton' Film <br> of Original Broadway Production</h2>
+                   <h3 class="caption">Now available for streaming on Disney+</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide4.jpg" alt="Fourth slide">
+               <div class="carousel-caption d-md-block">
+                   <h2 class="heading">'We Are Freestyle Love Supreme'</h2>
+                   <h3 class="caption">Now available for streaming on Hulu</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide5.jpg" alt="Fifth slide">
+               <div class="carousel-caption d-md-block" style="bottom: -40px;">
+                   <h2 class="heading">Raise Up: Win Prizes While Doing Good</h2>
+                   <h3 class="caption">Lin-Manuel and his family have joined Prizeo and Charitybuzz to support the Hispanic Federation's effort to raise funds for those impacted by COVID-19.</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide6.jpg" alt="Sixth slide">
+               <div class="carousel-caption d-md-block">
+                   <h2 class="heading">#ConanAtHome</h2>
+                   <h3 class="caption">Lin-Manuel Miranda Full Interview - CONAN on TBS</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide7.jpg" alt="Seventh slide">
+               <div class="carousel-caption d-md-block">
+                   <h2 class="heading">Zoom Surprise</h2>
+                   <h3 class="caption">'Some Good News' with John Krasinski</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide8.jpg" alt="Eighth slide">
+               <div class="carousel-caption d-md-block">
+                   <h2 class="heading">'In The Heights' Movie</h2>
+                   <h3 class="caption">Coming to Theaters Summer 2021</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img class="d-block w-100" src="./images/slide9.jpg" alt="Ninth slide">
+               <div class="carousel-caption d-md-block">
+                   <h2 class="heading">Ready. Set. Vote.</h2>
+                   <h3 class="caption">Our Country and Democracy are Stronger 'When We All Vote.'</h3>
+                   <button class="btn play-btn">
+                       <span class="fa-stack fa-2x">
+                           <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                           <i class="fa fa-play fa-stack-1x"></i> 
+                       </span>
+                   </button>
+               </div>
+             </div>
+           </div>
+   
+            <!-- Video Carousel Controls -->
+           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+     </div>
+    
+    <!-- Portfolio Grid -->
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 no-padding-col ">
+            <img class="img-fluid" src="./images/portfolio1.jpg">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4><a href="https://www.linmanuel.com/project/hamilton/">Hamilton</a></h4>
+                    <a class="tag" href="https://www.linmanuel.com/project-category/music/" rel="tag">Music</a>
+                    /
+                    <a  class="tag" Shref="https://www.linmanuel.com/project-category/theater/" rel="tag">Theater</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 no-padding-col ">
+            <img class="img-fluid" src="./images/portfolio2.jpg">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4><a href="https://www.linmanuel.com/project/his-dark-materials/">His Dark Materials</a></h4>
+                    <a class="tag" href="https://www.linmanuel.com/project-category/television/" rel="tag">Television</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 no-padding-col ">
+            <img class="img-fluid" src="./images/portfolio3.jpg">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4><a href="https://www.linmanuel.com/project/placita-de-guisin/">Placita de Güisin</a></h4>
+                    <a class="tag" href="https://www.linmanuel.com/project-category/other/" rel="tag">Puerto Rico</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 no-padding-col ">
+            <img class="img-fluid" src="./images/portfolio4.jpg">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4><a href="https://www.linmanuel.com/project/freestyle-love-supreme/">Freestyle Love Supreme</a></h4>
+                    <a class="tag" href="https://www.linmanuel.com/project-category/television/" rel="tag">Television</a>
+                    /
+                    <a  class="tag" Shref="https://www.linmanuel.com/project-category/theater/" rel="tag">Theater</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Featured Projects -->
+    <div class="row">
+        <div class="projects-wrapper">
+            <a href="https://www.linmanuel.com/projects/">VIEW FEATURED PROJECTS</a>
+        </div>
+    </div>
+
+     <!-- Latest News -->
+    <div class="row latest-news-wrapper">
+        <h2>Latest News</h2>
+        <hr class="header-seperator">
+        <div class="latest-news-rows">
+            <div class="latest-news-item">
+                <button class="btn"><i class="fas fa-plus" style="color: white;"></i></button>
+                <p>Lin-Manuel Miranda &amp; More Hamilton Stars Reunite for Fundraiser Honoring Women’s Suffrage Centennial&nbsp;</p>
+            </div>
+            <div class="latest-news-item">
+                <button class="btn"><i class="fas fa-plus" style="color: white;"></i></button>
+                <p>‘Hamilton’ Hits No. 2 on Billboard 200 </p>
+            </div>
+            <div class="latest-news-item">
+                <button class="btn"><i class="fas fa-plus" style="color: white;"></i></button>
+                <p>Video: Lin-Manuel Miranda Surprises 3 ‘Hamilton’-Loving Sisters </p>
+            </div>
+            <div class="latest-news-item">
+                <button class="btn"><i class="fas fa-plus" style="color: white;"></i></button>
+                <p>Video: The original Broadway cast of Hamilton performs “Helpless” with The Roots</p>
+            </div>
+            <div class="latest-news-item">
+                <button class="btn"><i class="fas fa-plus" style="color: white;"></i></button>
+                <p>Video: Lin-Manuel visits the Tonight Show and raps about Random Objects</p>
+            </div>
+            <div class="latest-news-item">
+                <button class="btn"><i class="fas fa-plus" style="color: white;"></i></button>
+                <p>WSJ: Lin-Manuel Miranda’s Most Revolutionary Role Yet</p>
+            </div>
+        </div>
+        <div class="latest-news-read-more">
+            <a href="https://www.linmanuel.com/news/">READ MORE NEWS</a>
+        </div>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="row subscribe-wrapper">
+        <label class="email-label" for="email">Subscribe to Receive Updates!</label>
+        <div class="input-group input-group-lg subscribe-form">
+            <input type="text" class="form-control" id= "email" placeholder="Email">
+            <div class="input-group-append">
+                <button class="btn subscribe-btn" type="button">I'M IN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advocacy -->
+    <div class="jumbotron text-white">
+        <h2>Making a Difference</h2>
+        <hr class="header-seperator">
+        <p class="subtitle">For over 40 years the Miranda Family has been a champion for community activism and advocacy for the arts, political representation, social justice, and, more recently, ongoing relief efforts in Puerto Rico.</p>
+        <p class="lead">
+          <a class="btn btn-lg learn-more-btn" href="https://www.linmanuel.com/advocacy/" role="button">LEARN MORE</a>
+        </p>
+      </div>
+
+    <!-- Official Goodies -->
+        <div class="jumbotron text-white official-goodies-wrapper">
+        <h2>Official Goodies</h2>
+        <hr class="header-seperator">
+        <a class="btn btn-lg" href="https://www.teerico.com/" role="button">SHOP OFFICIAL MERCHADISE</a>
+      </div>
+
+    <!-- Official Goodies Grid-->
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3 no-padding-col">
+            <img class="img-fluid" src="https://2qtwux14pz812aty4w1v9tbs-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/Facetime.gif">
+            <div class="overlay">
+                <div class="overlay-content">
+                    <h4><a class="tag" href="https://www.teerico.com/collections/lin-manuel-facetime">Facetime</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 no-padding-col">
+            <img class="img-fluid" src="https://2qtwux14pz812aty4w1v9tbs-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/In-the-heights.gif">
+            <div class="overlay overlay-2">
+                <div class="overlay-content">
+                    <h4><a class="tag" href="https://www.teerico.com/collections/lin-manuel-facetime">In the heights</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 no-padding-col">
+            <img class="img-fluid" src="https://2qtwux14pz812aty4w1v9tbs-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/New-items.gif">
+            <div class="overlay overlay-3">
+                <div class="overlay-content">
+                    <h4><a class="tag" href="https://www.teerico.com/collections/lin-manuel-facetime">New Items</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 no-padding-col ">
+            <img class="img-fluid" src="https://2qtwux14pz812aty4w1v9tbs-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/Photo-prints.gif">
+            <div class="overlay overlay-3">
+                <div class="overlay-content">
+                    <h4><a class="tag" href="https://www.teerico.com/collections/lin-manuel-facetime">Photo Prints</a></h4>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+     <!-- Footer -->
+    <footer class="footer">
+         <!-- Twitter -->
+        <div class="twitter-wrapper">
+            <a href="https://twitter.com/Lin_Manuel">
+                <i class="fab fa-twitter" style="font-size: 37px;"></i>
+            </a>
+        </div>
+
+         <!-- Footer Navbar -->
+        <ul class="navbar-nav ml-auto footer-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ADVOCACY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">NEWS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">STORE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+            </li>
+        </ul>
+        <div class="row copyrights-wrapper">    
+            <span>@2020 5000 Broadway Productions Inc.</span>
+            <a href="https://www.linmanuel.com/privacy-policy/">Privacy Policy</a>
+        </div>
+        
+    </footer>
+
+     <!-- Go To Top Button -->
+    <a class="go-top-btn" href="#"><i class="fas fa-chevron-up"></i></a>
+    </body>
+</html>
